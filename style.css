@@ -67,7 +67,7 @@ button{
 
 .projects article{
    display: grid;
-   grid-template-columns: subgrid;
+   grid-template-rows: subgrid;
    grid-row: span 3;
    gap: 1em
 }
@@ -77,10 +77,53 @@ button{
 }
 
 h1{
-   font-size: 400%;
+   font-size: 2.5rem;
 }
 
 h1, h2, h3, h4, h5, h6{
    line-height: 1.1;
    text-wrap: balance;
+}
+
+section{
+   margin: 1;
+}
+
+section article{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 2em;
+   align-items: center;
+   margin-bottom: 2em;
+}
+
+.skills-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(20 rem, 1fr));
+   gap: 2em;
+   align-items: start;
+}
+
+.skills-container article{
+   display: grid;
+   grid-template-rows: subgrid;
+   grid-row: span 3;
+   gap: 1rem;
+}
+
+.skills-container h3, .skills-container ul {
+   grid-column: 1 / -1;
+}
+
+.skills-logo{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1em;
+   align-items: center;
+}
+
+.skills-logo img{
+   height: 75px;
+   width: auto;
+   max-width: 100%;
 }

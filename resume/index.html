@@ -20,20 +20,20 @@
 
     <h1>Resume/CV</h1>
     <section>
-        <header>
-            <h2>Education</h2>
-        </header>
+        <header><h2>Education</h2></header>
         <article>
-            <img src="images/hdsi.png" alt="HDSI logo">
             <header>
                 <h3>University of California, San Diego</h3>
                 <h3>B.S Data Science</h3>
-            </header>
-            <ul>
-                <li><time datetime="2024-09">September 2024</time> - Current</li>
-                <li>Relevant Coursework: Data Structures and Algorithms for Data Science, The Practice and 
+                <ul>
+                    <li><time datetime="2024-09">September 2024</time> - Current</li>
+                    <li>Relevant Coursework: Data Structures and Algorithms for Data Science, The Practice and 
                 Applications of Data Science, Intro to Data Visualization</li>
-            </ul>
+                </ul>
+            </header>
+            <img src="images/hdsi.png" alt="HDSI logo">
+        </article>
+            
         </article>
     </section>
 
@@ -41,24 +41,23 @@
         <header>
             <h2>Skills</h2>
         </header>
-        <article>
-            <header>
-                <h3>Programming & Tools</h3>
-            </header>
-            <ul>
-                <li>Python(Pandas, Numpy, Matplotlib, sklearn), Java, Git, GitHub</li>
-            </ul>
-            <img src="images/python.png" alt="Python logo" width="75">
-            <img src="images/java.webp" alt="Java Logo" width="100">
-            <img src="images/git.png" alt="Git and Github Logo" width="200">
-            <header>
-                <h3>Data Science and ML</h3>
-            </header>
-            <ul>
-                <li>Statistical Analysis, Machine Learning (Regression, Classification), 
-                Data Cleaning & Preprocessing, Feature Engineering, Predictive Modeling</li>
-            </ul>
-        </article>
+        <div class="skills-container">
+            <article>
+                <header><h3>Programming & Tools</h3></header>
+                <ul><li>Python(Pandas, Numpy, Matplotlib, sklearn), Java, Git, GitHub</li></ul>
+                <div class="skills-logo">
+                    <img src="images/python.png" alt="Python logo">
+                    <img src="images/java.webp" alt="Java Logo">
+                    <img src="images/git.png" alt="Git and Github Logo">
+                </div>
+            </article>
+
+            <article>
+                <header><h3>Data Science and ML</h3></header>
+                <ul><li>Statistical Analysis, Machine Learning (Regression, Classification), 
+                    Data Cleaning & Preprocessing, Feature Engineering, Predictive Modeling</li></ul>
+            </article>
+        </div>
     </section>
 
     <section>
@@ -66,9 +65,7 @@
             <h2>Experience</h2>
         </header>
         <article>
-            <header>
-                <h3>Barista</h3>
-            </header>
+            <header><h3>Barista</h3></header>
             <ul>
                 <li><time datetime="2025-08">August 2025</time> - Current</li>
                 <li>Deliver consistent and friendly customer experience in a fact paced environemnt</li>
@@ -83,7 +80,7 @@
             <h2>Linkedin</h2>
         </header>
         <a href="https://www.linkedin.com/in/jamesrvidal/" target="_blank">
-            <img src="images/linkedin.png" alt="linkedin logo" width="100">
+            <img src="images/linkedin.png" alt="linkedin logo">
         </a>
     </section>
 </body>
