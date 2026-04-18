@@ -70,7 +70,7 @@ select.addEventListener('input', function (event){
     localStorage.colorScheme = event.target.value;
 });
 
-if ('colorScheme in localStorage'){
+if ('colorScheme' in localStorage){
     const savedScheme = localStorage.colorScheme;
 
     document.documentElement.style.setProperty('color-scheme', savedScheme);
