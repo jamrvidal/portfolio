@@ -3,6 +3,7 @@ body {
    max-width: 100ch;
    margin-inline: auto;
    padding: 1em;
+   position: relative;
 }
 
 nav ul, nav li{
