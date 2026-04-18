@@ -10,9 +10,10 @@ nav ul, nav li{
 }
 
 nav {
+   --border-color: oklch(50% 10% 200 / 40%);
    display: flex; 
    margin-bottom: 1em;
-   border-bottom: 1px solid oklch(80% 3% 200);
+   border-bottom: 1px solid var(--border-color);
 }
 
 nav a{
@@ -21,22 +22,24 @@ nav a{
    color: inherit;
    text-align: center;
    padding: 0.5em;
+   border-bottom: 0.4em solid transparent;
 }
 
 nav a.current{
-   border-bottom:0.4em solid oklch(80% 3% 200); 
+   border-bottom-color: var(--border-color);
    padding-bottom: 0.1em;
 }
 
 nav a:hover{
    border-bottom: 0.4em solid var(--color-accent);
    padding-bottom: 0.1em;
-   background-color: oklch(from var(--color-accent) 95% 5% h);
+   background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 html{
-   --color-accent: oklch(80% 3% 200);
+   --color-accent: oklch(65% 15% 200);
    accent-color: var(--color-accent);
+   color-scheme: light dark;
 }
 
 input, textarea, button{
@@ -86,7 +89,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 section{
-   margin: 1;
+   margin: 1em;
 }
 
 section article{
@@ -99,7 +102,7 @@ section article{
 
 .skills-container{
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(20 rem, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
    gap: 2em;
    align-items: start;
 }
@@ -126,4 +129,11 @@ section article{
    height: 75px;
    width: auto;
    max-width: 100%;
+}
+
+.color-scheme {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   font-size: 80%;
 }
