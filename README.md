@@ -1,1 +1,1 @@
-[Link to Portfoli here](https://jamrvidal.github.io/portfolio/)
+[Link to Portfolio here](https://jamrvidal.github.io/portfolio/)
